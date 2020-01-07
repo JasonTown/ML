@@ -264,3 +264,43 @@ repeat{
 [三种梯度下降形式的介绍](https://www.cnblogs.com/lliuye/p/9451903.html)
 
 [梯度下降理解](https://www.jianshu.com/p/c7e642877b0e)
+
+
+
+### 练习
+
+1. 根据分子中碳含量和燃烧释放能量的训练集，构建一个线性回归函数
+
+![题目](https://s2.ax1x.com/2020/01/07/lcyME4.png)
+
+
+
+```octave
+data = load('trainingset.txt');
+X = data(:,1);
+y = data(:,2);
+
+%定义梯度下降算法
+function theta = gradientDescent(X, y, alpha, iteraNum)
+theta = [0;0];
+m = length(y);
+for i=1:iteraNum;
+dist = theta(1) + X*theta(2) - y;
+theta(1) = theta(1) - alpha*(1/m)*sum(dist);
+theta(2) = theta(2) - alpha*(1/m)*sum(dist.*X);
+end;
+end;
+
+%默认学习速率为0.01 迭代次数为5000次
+theta = gradientDescent(X, y, 0.01, 5000);
+plot(X, y, 'xr', X, theta(1) + theta(2)*X);
+legend('Training Data','Linear Regression');
+xlabel('Number of hydrocarbons in molecule');
+ylabel('Heat release when burned(kJ/mol)');
+
+%theta = [-569,60; -530,91]
+```
+
+训练后得到的回归函数为 $h_\theta(x)=-569.6 - 530.9*x$ :
+
+![效果图](https://s2.ax1x.com/2020/01/07/lcgQUg.png)
