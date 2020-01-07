@@ -154,7 +154,7 @@ h=映射函数(hypothesis)
 
 **Parameters:** $\theta_0,\theta_1$
 
-**Cost Function: **$J(\theta_0,\theta_1)=\frac{1}{2m}  \sum ^m _{i=1} (h_θ(x^{(i)})-y^{(i)})^2$
+**Cost Function:** $J(\theta_0,\theta_1)=\frac{1}{2m}  \sum ^m _{i=1} (h_θ(x^{(i)})-y^{(i)})^2$
 
 **Goal:** $J(\theta_0,\theta_1)min$
 
