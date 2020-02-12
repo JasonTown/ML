@@ -9,7 +9,6 @@ Google了一圈，发现大部分人对机器学习入门，最推荐的是Stanf
 课程学习详见：[Coursera](https://www.coursera.org/learn/machine-learning)
 
 1. 学习记录和总结在文档 `吴恩达机器学习.md`中，[个人博客](http://www.tangyibo.cn/index.php/archives/32/)做同步更新
-
-2. 练习存在于`PracticeCode`路径中，Octave做设计，Python做应用
-
-3. 课程的PDF存放于路径`LecturePDF`中
+2. 课堂练习文件位于`Exercise`路径中
+3. 个人练习文件位于`PracticeCode`路径中，Octave做设计，Python做应用
+4. 课程的PDF存放于路径`LecturePDF`中

@@ -34,6 +34,7 @@ warmUpExercise()
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+kbhit();          %<<<<<<<<<<<<<<<<<<<<<<<to del
 
 
 %% ======================= Part 2: Plotting =======================
@@ -48,6 +49,7 @@ plotData(X, y);
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+kbhit();          %<<<<<<<<<<<<<<<<<<<<<<<to del
 
 %% =================== Part 3: Cost and Gradient descent ===================
 
@@ -71,6 +73,7 @@ fprintf('Expected cost value (approx) 54.24\n');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+kbhit();          %<<<<<<<<<<<<<<<<<<<<<<<to del
 
 fprintf('\nRunning Gradient Descent ...\n')
 % run gradient descent
@@ -98,6 +101,7 @@ fprintf('For population = 70,000, we predict a profit of %f\n',...
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+kbhit();          %<<<<<<<<<<<<<<<<<<<<<<<to del
 
 %% ============= Part 4: Visualizing J(theta_0, theta_1) =============
 fprintf('Visualizing J(theta_0, theta_1) ...\n')
